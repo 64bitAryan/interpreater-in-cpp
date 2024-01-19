@@ -1,0 +1,16 @@
+# CMakeLists.txt
+
+cmake_minimum_required(VERSION 3.10)
+
+project(cMonkey)
+
+# Add your source files
+set(SOURCES
+    main.cpp
+    repl/repl.cpp
+    lexer/lexer.cpp
+    token/token.cpp
+)
+
+# Add an executable target
+add_executable(cMonkey ${SOURCES})
